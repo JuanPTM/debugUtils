@@ -5,6 +5,16 @@ Description
 ---
 DebugUtils is a macro file to simplify the arduino debug code, that way you can simply enable/disable the serial output of your sketch with a define.
 
+---
+Instalation
+---
+
+Drop the folder under the next directory.
+
+```
+path-to-arduino/libraries/DebugUtils/DebugUtils.h
+```
+
 ----
 Usage
 ----
