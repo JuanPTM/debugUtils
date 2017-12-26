@@ -37,7 +37,13 @@ void loop() {
 }
 ```
 In this mode we will have an output like this:
-__ADD URL__
+
+![Verbose Output](https://github.com/JuanPTM/debugUtils/blob/master/debug_mode2.png)
+
+We can see that in this mode, the debug print the next information for _**all**_ of the _DEBUG_XXXX(msg)_ used:
+```
+millis(): function filePath:Line MsgOnThePrintMethod
+```
 
 ----
 
@@ -61,7 +67,14 @@ void loop() {
 }
 ```
 In this mode we will have an output like this:
-__ADD URL__
+
+![Print Mode Output](https://github.com/JuanPTM/debugUtils/blob/master/debug_mode1.png)
+
+We can see that in this mode, we have the _DEBUG_PRINT(msg)_ and _DEBUG_PRINTLN(msg)_ which only differ on the new line after the message. 
+In this mode the _DEBUG_VERBOSE(msg)_ will change to the next message:
+```
+Not showing verbose mode on line: Line due to not verbose configured.
+```
 
 ----
 
@@ -85,7 +98,11 @@ void loop() {
 }
 ```
 In this mode we will have an output like this:
-__ADD URL__
+
+![Disable Print Mode Output](https://github.com/JuanPTM/debugUtils/blob/master/debug_mode0.png)
+
+In this mode, our program **won't** write anything of our _DEBUG_XXXX(msg)_ on the console, but we still can print with the
+_Serial_ methods.
 
 
 ----
