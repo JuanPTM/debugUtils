@@ -108,7 +108,7 @@ _Serial_ methods.
 ----
 Contact
 ----
-Feel free to contact with any doubt.
+Feel free to contact if you have any doubt.
 
 ---
 Thanks
