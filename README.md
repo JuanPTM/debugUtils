@@ -18,9 +18,10 @@ path-to-arduino/libraries/DebugUtils/DebugUtils.h
 ----
 Usage
 ----
-Enable verbose mode.
+Verbose mode.
+
 ```arduino
-#define DEBUG 2
+#define DEBUG 3
 #include "DebugUtils.h"
 
 void setup() {
@@ -47,10 +48,10 @@ millis(): function filePath:Line MsgOnThePrintMethod
 
 ----
 
-Enable print mode.
+Print with verbose warning enable Mode.
 
 ```arduino
-#define DEBUG 1
+#define DEBUG 2
 #include "DebugUtils.h"
 
 void setup() {
@@ -78,7 +79,35 @@ Not showing verbose mode on line: Line due to not verbose configured.
 
 ----
 
-Disable all serial output.
+Simple print mode.
+
+```arduino
+#define DEBUG 1
+#include "DebugUtils.h"
+
+void setup() {
+  Serial.begin(9600);
+  DEBUG_PRINT(millis());
+  DEBUG_PRINTLN(millis());
+}
+
+void loop() {
+  DEBUG_PRINT("debug sin Salto linea || ");
+  DEBUG_PRINTLN(millis());
+  DEBUG_VERBOSE("hola");
+  delay(1000);
+}
+```
+In this mode we will have an output like this:
+
+__*No image available right now*__
+
+We can see that in this mode, we have the _DEBUG_PRINT(msg)_ and _DEBUG_PRINTLN(msg)_ which only differ on the new line after the message. 
+In this mode the _DEBUG_VERBOSE(msg)_ will not show any message.
+
+----
+
+Quiet Mode.
 
 ```arduino
 #define DEBUG 0
@@ -121,3 +150,4 @@ All information come from:
 ----------
 [1]: https://forum.arduino.cc/index.php?topic=46900.0
 [2]: https://gcc.gnu.org/onlinedocs/cpp/
+
