@@ -2,7 +2,6 @@ language: c
 sudo: true
 before_install:
   - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
-install: ./cp.sh
 script:
   - build_main_platforms
 notifications:
