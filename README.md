@@ -1,4 +1,4 @@
-DebugUtils
+DebugUtils [![Build Status](https://travis-ci.org/JuanPTM/debugUtils.svg?branch=master)](https://travis-ci.org/JuanPTM/debugUtils)
 ----
 
 Description
