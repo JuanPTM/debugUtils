@@ -1,3 +1,4 @@
+
 #ifndef DEBUGUTILS_H
 #define DEBUGUTILS_H
 
@@ -24,7 +25,7 @@
         Serial.print(' ');          \
         Serial.println(str);
 
-#if DEBUG==1 // SIMPLE PRINT MODE
+#elif DEBUG==1 // SIMPLE PRINT MODE
 #define DEBUG_PRINT(str)    Serial.print(str);
 #define DEBUG_PRINTLN(str)  Serial.println(str);
 #define DEBUG_VERBOSE(str)
@@ -37,3 +38,4 @@
 #endif
 
 #endif
+
