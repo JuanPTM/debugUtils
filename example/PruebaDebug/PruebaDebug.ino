@@ -1,5 +1,5 @@
 #define DEBUG 0
-#include "../../DebugUtils/DebugUtils.h"
+#include "DebugUtils.h"
 
 void setup() {
   // put your setup code here, to run once:
